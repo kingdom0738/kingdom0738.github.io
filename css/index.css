@@ -274,11 +274,17 @@ blockquote p {
 }
 .header_wrap {
   max-width: 1200px;
-  margin-left: auto;
+  margin-left: 400px;
   margin-right: auto;
   clear: both;
   padding: 1.6rem 2rem 1rem;
   font-size: 2rem;
+  position: fixed;
+  top: 0; /* 让导航栏保持在页面顶部 */
+  background-color: #fff; /* 设置背景颜色，可以根据需要进行调整 */
+  z-index: 20;
+  width: 100%; /* 使导航栏占满整个宽度 */
+  transition: top 0.3s ease-in-out; /* 添加过渡效果 */
 }
 #blog_name {
   display: inline-block;
@@ -448,6 +454,7 @@ blockquote p {
 .page article {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
+  margin-top: 100px;
 }
 .page article h1 {
   font-size: 3rem;
@@ -510,8 +517,9 @@ blockquote p {
   }
 }
 .side-card {
+  padding-top: 80px;
   clear: both;
-  margin-bottom: 1.6rem;
+  overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -527,6 +535,7 @@ blockquote p {
   line-height: 1.5;
 }
 .author-avatar {
+  overflow: hidden !important;
   display: table-cell;
   vertical-align: top;
   width: 40px;
@@ -538,6 +547,7 @@ blockquote p {
   border-radius: 50%;
 }
 .author-discrip {
+  overflow: hidden !important;
   display: table-cell;
   vertical-align: top;
   padding-left: 15px;
@@ -576,6 +586,7 @@ blockquote p {
   margin-bottom: 0px;
 }
 .btn {
+  overflow: hidden !important;
   display: inline-block;
   margin-bottom: 0.25em;
   font-size: 0.75em;
@@ -716,6 +727,7 @@ blockquote p {
     padding: 10px 10px 10px 17px;
   }
   .sticky {
+    overflow: hidden !important;
     clear: both;
     position: -webkit-sticky;
     position: sticky;
