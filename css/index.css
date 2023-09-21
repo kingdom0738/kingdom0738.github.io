@@ -518,6 +518,7 @@ blockquote p {
 }
 .side-card {
   padding-top: 80px;
+  margin-left: -200px;
   clear: both;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -542,9 +543,8 @@ blockquote p {
   height: 40px;
 }
 .author-avatar img {
-  width: 100%;
-  max-width: 110px;
-  border-radius: 50%;
+  width: 300%;
+  max-width: 300px;
 }
 .author-discrip {
   overflow: hidden !important;
@@ -715,11 +715,11 @@ blockquote p {
 }
 @media (min-width: 34em) {
   .side-card {
-    width: 15.25424%;
+    width: 27.25424%;
     min-width: 165px;
     float: left;
-    margin-right: 1.69492%;
-    opacity: 0.75;
+    margin-right: 0;
+    opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
   }
@@ -743,7 +743,7 @@ blockquote p {
     text-align: center;
   }
   .author-avatar img {
-    padding: 5px;
+    padding: 0px;
     border: 1px solid #f2f3f3;
   }
   .author-discrip {
